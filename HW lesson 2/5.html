@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        /**
+         * Функция арифметической операции.
+         * @param {number} arg1 число.
+         * @param {number} arg2 число.
+         * @param {string} operation арифметическая операция.
+         */
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "сложение":
+                    return arg1 + arg2;
+                case "вычитание":
+                    return arg1 - arg2;
+                case "деление":
+                    return arg1 / arg2;
+                case "умножение":
+                    return arg1 * arg2;
+            }
+        }
+        let addition = mathOperation(10, 10, "умножение");
+        console.log(addition)
+    </script>
+</body>
+
+</html>
