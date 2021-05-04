@@ -24,10 +24,10 @@
         "use strict"
         let allB = document.querySelectorAll('b');
         for (let i = 0; i < allB.length; i++) {
-            if (allB[i].classList.contains('sign')) {} else {
+            if (!allB[i].classList.contains('sign')) {
                 allB[i].classList.add('sign')
             }
-        }
+        };
     </script>
 </body>
 
